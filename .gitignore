@@ -1,18 +1,54 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
-
-# Other files and folders
+# ===== IDE =====
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
 .settings/
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# ===== OS =====
+.DS_Store
+Thumbs.db
+desktop.ini
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# ===== Java =====
+target/
+*.class
+*.jar
+*.war
+*.log
+hs_err_pid*
+
+# ===== Node.js =====
+node_modules/
+dist/
+.env.local
+.env.*.local
+
+# ===== Build =====
+build/
+out/
+deploy/data
+deploy/service
+# ===== JWT 密钥（首次启动自动生成，不提交到仓库）=====
+config/smartj-jwt.key
+**/smartj-jwt.key
+
+# ===== 本地环境变量配置（含密钥，不提交到仓库）=====
+**/.env.properties
+
+# ===== Qoder =====
+.qoder/repowiki
+.qoder/plans
+
+# ===== 其他 =====
+*.swp
+*.swo
+*~
+logs/
+docs/.vitepress/cache
+原型设计
+技术方案
+smartj-backend/smartj-samples
